@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "CTSkipList",
+	"category" : "Containers-SkipList-Structure",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CTIdentitySkipList",
+	"type" : "normal"
+}

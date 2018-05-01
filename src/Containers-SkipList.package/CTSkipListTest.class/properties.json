@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "tlk 4/30/2006 21:49",
+	"super" : "ClassTestCase",
+	"category" : "Containers-SkipList-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CTSkipListTest",
+	"type" : "normal"
+}

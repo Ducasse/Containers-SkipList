@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "StephaneDucasse 12/8/2016 19:15",
+	"super" : "Collection",
+	"category" : "Containers-SkipList-Structure",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Rand"
+	],
+	"instvars" : [
+		"sortBlock",
+		"pointers",
+		"numElements",
+		"level",
+		"splice"
+	],
+	"name" : "CTSkipList",
+	"type" : "normal"
+}
