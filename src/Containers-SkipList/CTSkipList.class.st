@@ -42,9 +42,8 @@ CTSkipList class >> example [
 
 { #category : #'instance creation' }
 CTSkipList class >> maxLevel: maxLevel [
-	"
-	SkipList maxLevel: 5
-	"
+	"sel maxLevel: 5"
+	
 	^ super new initialize: maxLevel
 ]
 
@@ -55,9 +54,8 @@ CTSkipList class >> maxLevel: anInteger sortBlock: aBlock [
 
 { #category : #'instance creation' }
 CTSkipList class >> new [
-	"
-	SkipList new
-	"
+	"self new"
+	
 	^ super new initialize: 10
 ]
 
