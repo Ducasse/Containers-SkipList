@@ -1,3 +1,0 @@
-accessing
-maxLevel
-	^ pointers size
