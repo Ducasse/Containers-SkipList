@@ -1,6 +1,6 @@
 # Containers-SkipList
 
-An implementation of Lalonde datastructure proposal
+An implementation of Pugh datastructure proposal described in Skip lists: a probabilistic alternative to balanced trees - Communications of the ACM.
 
 [![Build Status](https://travis-ci.com/Ducasse/Containers-SkipList.svg?branch=master)](https://travis-ci.com/Ducasse/Containers-SkipList)
 [![Coverage Status](https://coveralls.io/repos/github//Ducasse/Containers-SkipList/badge.svg?branch=master)](https://coveralls.io/github//Ducasse/Containers-SkipList?branch=master)
