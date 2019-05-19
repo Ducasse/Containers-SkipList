@@ -20,8 +20,6 @@ CTSkipListTest >> classToBeTested [
 CTSkipListTest >> testAdd [
 	"tests size after adding element"
 
-	"self run:#testAdd"
-
 	| s |
 	s := self classToBeTested new.
 	s add: 1.
@@ -30,8 +28,7 @@ CTSkipListTest >> testAdd [
 
 { #category : #implementationTests }
 CTSkipListTest >> testAddIfPresent [
-	"adds an already existing element. Decides to add another one in the
-	ifPresent block"
+	"adds an already existing element. Decides to add another one in the ifPresent block"
 
 	| s |
 	s := self classToBeTested new.
@@ -42,9 +39,6 @@ CTSkipListTest >> testAddIfPresent [
 
 { #category : #public }
 CTSkipListTest >> testAt [
-	"self run: #testAt"
-
-	"self debug: #testAt"
 
 	| sk |
 	sk := self classToBeTested new.
@@ -61,9 +55,6 @@ CTSkipListTest >> testAt [
 
 { #category : #public }
 CTSkipListTest >> testAtPutAlreadyPresent [
-	"self run: #testAtPutAlreadyPresent"
-
-	"self debug: #testAtPutAlreadyPresent"
 
 	| sk |
 	sk := self classToBeTested new.
@@ -80,7 +71,6 @@ CTSkipListTest >> testAtPutAlreadyPresent [
 
 { #category : #public }
 CTSkipListTest >> testCopy [
-	"This is a non regression test for http://bugs.squeak.org/view.php?id=6778"
 
 	| original copy |
 	original := self classToBeTested new.
@@ -94,9 +84,6 @@ CTSkipListTest >> testCopy [
 
 { #category : #public }
 CTSkipListTest >> testCreation [
-	"self run: #testCreation"
-
-	"self debug: #testCreation"
 
 	| sk |
 	sk := self classToBeTested new.
@@ -156,18 +143,6 @@ CTSkipListTest >> testIsEqualTo [
 ]
 
 { #category : #implementationTests }
-CTSkipListTest >> testMaxLevel [
-	"No node should have a level greater than the skiplist maxLevel"
-
-	| s |
-	s := self classToBeTested new.
-	s add: 12.
-	s add: 53.
-	s add: 14.
-	s nodesDo: [ :n | self assert: n level <= s maxLevel ]
-]
-
-{ #category : #implementationTests }
 CTSkipListTest >> testNavigation [
 	"self run: #testNavigation"
 
@@ -188,10 +163,20 @@ CTSkipListTest >> testNavigation [
 ]
 
 { #category : #implementationTests }
-CTSkipListTest >> testRandomLevel [
-	"a randomLevel should not be greater than maxLevel"
+CTSkipListTest >> testNoNodeShouldHaveLevelGreaterThanMaxLevel [
+	"No node should have a level greater than the skiplist maxLevel"
 
-	"self run: #testRandomLevel"
+	| s |
+	s := self classToBeTested new.
+	s add: 12.
+	s add: 53.
+	s add: 14.
+	s nodesDo: [ :n | self assert: n level <= s maxLevel ]
+]
+
+{ #category : #implementationTests }
+CTSkipListTest >> testRandomLevelShouldNotBeGreaterThanMaxLevel [
+	"a randomLevel should not be greater than maxLevel"
 
 	| s |
 	s := self classToBeTested new.
@@ -202,8 +187,6 @@ CTSkipListTest >> testRandomLevel [
 { #category : #public }
 CTSkipListTest >> testRemove [
 	"tests size after removing element"
-
-	"self run:#testRemove"
 
 	| s |
 	s := self classToBeTested new.
