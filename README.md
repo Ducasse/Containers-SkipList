@@ -24,7 +24,7 @@ Metacello new
 
 ```
 spec 
-   baseline: 'ContainersOrderPreservingDictionary' 
+   baseline: 'ContainersSkipList' 
    with: [ spec repository: 'github://Ducasse/Containers-SkipList/src' ].
 ```
 
